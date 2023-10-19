@@ -45,18 +45,18 @@
     margin-bottom: 5%;
 }
 #Inicio .container_1 a {
-    margin: 3% auto ;
-    width: 100%;
+    margin: 5% 10% ;
+    width: 150%;
     height: 50%;
     display: flex;
     justify-content: center;
 }
-#Inicio .container_1 a button {
+#menu a button {
     background-color: #4C4C4E;
     border-radius: 20px;
-    width: 70%;
+    width: 100%;
     height: 100%;
-    padding: 2% 0;
+    padding: 4% 0;
 }
 #Inicio .container_1 a span {
     color: white;

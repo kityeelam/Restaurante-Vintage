@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/css.css">
     <link rel="stylesheet" href="css/font.css">
-    
+    <script src="jquery.js" defer></script>
     <link rel="shortcut icon" href="css/Imagenes/icon.gif">
     <title>Restaurant Vintage</title>
 </head>
@@ -22,15 +22,17 @@
                 <img src="css/Imagenes/logo.png" alt="Logo">
                 <h2>Personaliza tu comida</h2>
                 <p>Escoje perfectas combinaciones para un plato completo que te va a satisfacer en cualquier momento</p>
-                <a href="part_1.html">
-                    <button> <span> DESAYUNO </span></button>
-                </a>
-                <a href="part_1.html">
-                    <button> <span> ALMUERZO </span></button>
-                </a>
-                <a href="part_1.html">
-                    <button> <span> CENA </span></button>
-                </a>
+                <div id="menu">
+                    <a href="part_1.html?comida=desayuno">
+                        <button id="desayuno"> <span> DESAYUNO </span></button>
+                    </a>
+                    <a href="part_1.html?comida=almuerzo">
+                        <button id="almuerzo"> <span> ALMUERZO </span></button>
+                    </a>
+                    <a href="part_1.html?comida=cena">
+                        <button id="cena"> <span> CENA </span> </button>
+                    </a>
+                </div>
             </div>
             <div class="container_2">
                 <h1>Sabemos lo que te gusta.</h1>
@@ -38,6 +40,6 @@
             </div>
         </div>
     </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
-
 </html>
