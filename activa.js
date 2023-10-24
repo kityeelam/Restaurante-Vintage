@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function() {
         total = totalPrice + totalAcompaniamiento + totalBebidas + totalPostres;
 
         document.getElementById('total').textContent = total.toFixed(2);
-        document.getElementById('platoPrincipalPrecio').textContent = totalPrice.toFixed(2);
+        document.getElementById('platoPrincipalPrecio').textContent = (totalPrice - totalAcompaniamiento - totalBebidas - totalPostres).toFixed(2);
         document.getElementById('acompañamientoPrecio').textContent = totalAcompaniamiento.toFixed(2);
         document.getElementById('bebidaPrecio').textContent = totalBebidas.toFixed(2);
         document.getElementById('postrePrecio').textContent = totalPostres.toFixed(2);
@@ -103,5 +103,15 @@ document.addEventListener("DOMContentLoaded", function() {
             <p>Pedido: ${selectedItems.join(', ')}</p>
         `;
     }
+
+    $(".input-container input[type='checkbox']").change(function() {
+        var totalPrecioPlatoPrincipal = 0;
+        $(".input-container input[type='checkbox']:checked").each(function() {
+            totalPrecioPlatoPrincipal += parseFloat($(this).data("price"));
+        });
+
+        // Actualizar el precio total en el área de "PlatoPrincipalPrecio"
+        $("#precioPlatoPrincipal").text(totalPrecioPlatoPrincipal.toFixed(2));
+    });
 });
 

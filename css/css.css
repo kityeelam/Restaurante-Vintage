@@ -131,6 +131,9 @@ h1{
     width: 93%;
     margin: 3% 0;
 }
+#part_1 .container_1 p{
+    margin: 5%;
+}
 #part_1 .container_1 fieldset {
     border: none;
     padding: 3% 0;    

@@ -16,50 +16,56 @@
     <a href="index.html"> <img src="css/Imagenes/icon.gif" alt="icono" class="icono"></a>
     
     <nav>
-        <a href="part_1.html"><button><span> 1 </span></button></a>
+        <a href="#"><button onclick="goToPage(1)"><span> 1 </span></button></a>
         <a href="#"><button onclick="goToPage(2)"><span> 2 </span></button></a>
         <a href="#"><button onclick="goToPage(3)"><span> 3 </span></button></a>
         <a href="#"><button onclick="goToPage(4)"><span> 4 </span></button></a>
         <hr>
     </nav>
-    <div class="page" id="page1">
+    <div class="page" id="1">
         <section class="Carnes">
-            <h1> Carnes </h1>
+            <h1 id="Page1_H1_1"> Carnes </h1>
             <div class="container">
                 <div class="container_1">
                     <img src="css/Imagenes/res.png" alt="plato de carne de res" id="Page1_img1">
-                    <h2 id="Page1_H2_1">RES</h2> 
+                    <h2 id="Page1_H2_1">RES</h2>
+                    <p id="Page1_p_1"></p>
+                    <div class="input1"></div> 
                     <fieldset>
-                        <input type="checkbox" name="Res" value="Lomo de res" data-price="50.00">
-                        <label for="op1_r"> Lomo . . . . . . . . . . . . . . . .  $50.00 </label> <br> <br>
-                        <input type="checkbox" name="Res"  value="TriTipSteak" data-price="65.00">
-                        <label for="op2_r"> Tri-Tip Steak  . . . . . . . . .  . $65.00</label> <br> <br>
-                        <input type="checkbox" name="Res"  value="RibEyeSteak" data-price="65.00">
-                        <label for="op3_r"> Rib Eye Steak  . . . . . . . . . $65.00 </label> <br> 
+                        <input type="checkbox" name="Res" value="Lomo de res" data-price="20.00">
+                        <label for="op1_r"> Lomo . . . . . . . . . . . . . . . .  $20.00 </label> <br> <br>
+                        <input type="checkbox" name="Res"  value="TriTipSteak" data-price="17.00">
+                        <label for="op2_r"> Tri-Tip Steak  . . . . . . . . .  . $17.00</label> <br> <br>
+                        <input type="checkbox" name="Res"  value="RibEyeSteak" data-price="22.00">
+                        <label for="op3_r"> Rib Eye Steak  . . . . . . . . . $22.00 </label> <br> 
                     </fieldset>
                 </div>
                 <div class="container_1 activa">
                     <img src="css/Imagenes/cerdo.png" alt="plato de carne de cerdo" id="Page1_img2">
                     <h2 id="Page1_H2_2">CERDO</h2>
+                    <p id="Page1_p_2"></p> 
+                    <div class="input2"></div> 
                     <fieldset>
-                        <input type="checkbox" name="Cerdo" value="Lomo de cerdo" data-price="47.00">
-                        <label for="op1_C"> Lomo . . . . . . . . . . . . . . . .  $47.00 <label> <br> <br>
-                        <input type="checkbox" name="Cerdo" value="Costila" data-price="50.00">
-                        <label for="op2_C"> Costilla . . .   . . . . . . . . . . . . $50.00 </label> <br> <br>
-                        <input type="checkbox" name="Cerdo" value="Bisteck" data-price="45.00">
-                        <label for="op4_C"> Bisteck  . . . . . . . . . . . . . .  $45.00 </label> <br>
+                        <input type="checkbox" name="Cerdo" value="Lomo de cerdo" data-price="17.00">
+                        <label for="op1_C"> Lomo . . . . . . . . . . . . . . . .  $17.00 <label> <br> <br>
+                        <input type="checkbox" name="Cerdo" value="Costila" data-price="20.00">
+                        <label for="op2_C"> Costilla . . .   . . . . . . . . . . . . $20.00 </label> <br> <br>
+                        <input type="checkbox" name="Cerdo" value="Bisteck" data-price="18.00">
+                        <label for="op4_C"> Bisteck  . . . . . . . . . . . . . .  $18.00 </label> <br>
                     </fieldset>
                 </div>
                 <div class="container_1">
                     <img src="css/Imagenes/pescado.png" alt="plato de carne de pescado" id="Page1_img3">
                     <h2 id="Page1_H2_3">PESCADO</h2>
+                    <p id="Page1_p_3"></p>
+                    <div class="input3"></div> 
                     <fieldset>
-                        <input type="checkbox" name="Pescado" value="Tilapia" data-price="45.00">
-                        <label for="op1_P"> Tilapia. . . . . . . . . . . . . . . .  $45.00 </label> <br> <br>
-                        <input type="checkbox" name="Pescado" value="Atun" data-price="50.00">
-                        <label for="op2_P"> Atun . . .   . . . . . . . . .  .  . . . . $50.00 </label> <br> <br>
-                        <input type="checkbox" name="Pescado" value="Salmon" data-price="50.00">
-                        <label for="op3_P"> Salmon  . . . .  . . . . . . . . . . . $50.00 </label> <br> 
+                        <input type="checkbox" name="Pescado" value="Tilapia" data-price="15.00">
+                        <label for="op1_P"> Tilapia. . . . . . . . . . . . . . . .  $15.00 </label> <br> <br>
+                        <input type="checkbox" name="Pescado" value="Atun" data-price="14.00">
+                        <label for="op2_P"> Atun . . .   . . . . . . . . .  .  . . . . $14.00 </label> <br> <br>
+                        <input type="checkbox" name="Pescado" value="Salmon" data-price="17.00">
+                        <label for="op3_P"> Salmon  . . . .  . . . . . . . . . . . $17.00 </label> <br> 
                     </fieldset>
                 </div>
             </div>
@@ -73,19 +79,19 @@
             <div class="container" >
                 <div class="container_2" data-price="5.00">
                     <img src="css/Imagenes/arroz.png" alt="arroz" id="Page2_img1">
-                    <input type="checkbox" name="Acompañamiento" value="arroz" data-price="5.00">
+                    <input type="checkbox" name="Acompañamiento" value="arroz" data-price="5.00" id="Page2_value1">
                     <h2 id="Page2_H2_1">ARROZ</h2>
                     <H2>$5.00</H2>
                 </div>
                 <div class="container_2 activa" data-price="5.00">
                     <img src="css/Imagenes/pure de papa.png" alt="pure de papa" id="Page2_img2">
-                    <input type="checkbox" name="Acompañamiento" value="pure de papa" data-price="5.00">
+                    <input type="checkbox" name="Acompañamiento" value="pure de papa" data-price="5.00" id="Page2_value2">
                     <h2 id="Page2_H2_2">PURE DE PAPA</h2>
                     <H2>$5.00</H2>
                 </div>
                 <div class="container_2" data-price="5.00">
                     <img src="css/Imagenes/ensalada.png" alt="ensalada" id="Page2_img3">
-                    <input type="checkbox" name="Acompañamiento" value="ensalada" data-price="5.00">
+                    <input type="checkbox" name="Acompañamiento" value="ensalada" data-price="5.00" id="Page2_value3">
                     <h2 id="Page2_H2_3">ENSALADA</h2>
                     <H2>$5.00</H2>
                 </div>
@@ -122,19 +128,19 @@
             <h1> Postres </h1>
             <div class="container">
                 <div class="container_2">
-                    <img src="css/Imagenes/postre_1.png" alt="postre" data-price="18.00" id="Page4_img1">
-                    <input type="checkbox" name="Postre" value="pie de limon" data-price=18.00">
-                    <H2 id="Page4_H2_1" >$18.00</H2>
+                    <img src="css/Imagenes/postre_1.png" alt="postre" id="Page4_img1">
+                    <input type="checkbox" name="Postre" value="pie de limon" data-price="8.00" id="Page4_value1">
+                    <H2 id="Page4_H2_1" >$8.00</H2>
                 </div>
                 <div class="container_2 activa">
-                    <img src="css/Imagenes/postre_2.png" alt="postre" data-price="17.00" id="Page4_img2">
-                    <input type="checkbox" name="Postre" value="cheesecake" data-price=17.00">
-                    <H2 id="Page4_H2_2" >$17.00</H2>
+                    <img src="css/Imagenes/postre_2.png" alt="postre" id="Page4_img2">
+                    <input type="checkbox" name="Postre" value="cheesecake" data-price="7.00" id="Page4_value2">
+                    <H2 id="Page4_H2_2" >$7.00</H2>
                 </div>
                 <div class="container_2">
-                    <img src="css/Imagenes/postre_3.png" alt="postre" data-price="15.00" id="Page4_img3">
-                    <input type="checkbox" name="Postre" value="smoothie" data-price=15.00">
-                    <H2 id="Page4_H2_3" >$15.00</H2>
+                    <img src="css/Imagenes/postre_3.png" alt="postre" data-price="5.00" id="Page4_img3">
+                    <input type="checkbox" name="Postre" value="smoothie" data-price="5.00" id="Page4_value3">
+                    <H2 id="Page4_H2_3" >$5.00</H2>
                 </div>
             </div>
             <br>
