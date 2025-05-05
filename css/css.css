@@ -232,3 +232,73 @@ h1{
     width: 17%;
     translate: 240% 40%;   
 }
+
+
+@media (max-width: 768px) {
+    #Inicio {
+        width: 100%;            
+        max-width: 1200px;     
+        margin: 0 auto;        
+        overflow-x: hidden;   
+        box-sizing: border-box;    
+      }
+    #Inicio nav {
+        display: flex;
+        flex-direction:row ;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        width: 100%;
+        padding-left: 25%;
+    }
+    #Inicio nav a {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        border-bottom: 2px solid #6C3016;
+    }
+    #Inicio .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 220%;
+        margin: 0 -70%;
+    }
+    #Inicio .container_1,
+    #Inicio .container_2 {
+        width: 100%;
+        float: none;
+    }
+    #Inicio .container_1 img {
+        width: 40%;
+        margin: 0 0 1rem;
+    }
+
+    #Inicio .container_1 h2 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    #Inicio .container_1 p,
+    #Inicio .container_2 p {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    #Inicio .container_1 a {
+        width: 100%;
+        height: auto;
+        margin: 1rem -1rem;
+    }
+    #menu a button {
+        padding: 0.8rem 1rem;
+        font-size: 0.5rem;
+    }
+    #Inicio .container_2 img {
+        width: 80%;
+        margin: 5% 0;
+    }
+    #Inicio .container_2 {
+        margin-left: 5%;
+    }
+}
