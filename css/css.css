@@ -254,65 +254,84 @@ h1{
       }
     #Inicio nav {
         display: flex;
-        flex-direction:row ;
+        flex-direction:row;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 0.5rem;
+        gap: 0rem;
         width: 100%;
-        padding-left: 25%;
+        padding: 0%;
+        margin: 0;
+        margin-bottom: 5%;
     }
     #Inicio nav a {
         font-size: 1rem;
         padding: 0.5rem 1rem;
         border-bottom: 2px solid #6C3016;
     }
-    #Inicio .container {
+    #Inicio div.container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 220%;
-        margin: 0 -70%;
-    }
-    #Inicio .container_1,
-    #Inicio .container_2 {
         width: 100%;
+    }
+
+    #Inicio div.container div {
+        width: 90%;
+        margin: 5% 0;
         float: none;
     }
+
+    #Inicio div.container div.container_1 {
+        margin: 0 auto;
+        padding: 5% 3%;
+        border: 2px solid black;
+        box-sizing: border-box;
+    }
+
+    #Inicio div.container div p {
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;
+        margin: 3% 0;
+    }
+
     #Inicio .container_1 img {
-        width: 40%;
-        margin: 0 0 1rem;
+        width: 60%;
+        margin: 0 auto 5%;
+        display: block;
     }
 
     #Inicio .container_1 h2 {
-        font-size: 1.3rem;
-        margin-bottom: 1rem;
+        font-size: 1.5rem;
         text-align: center;
-    }
-
-    #Inicio .container_1 p,
-    #Inicio .container_2 p {
-        width: 100%;
-        font-size: 1rem;
+        margin: 5% 0;
     }
 
     #Inicio .container_1 a {
         width: 100%;
-        height: auto;
-        margin: 1rem -1rem;
+        margin: 3% auto;
+        display: flex;
+        justify-content: center;
     }
+
     #menu a button {
-        width: auto;
-        padding: 10px 20px;
+        background-color: #4C4C4E;
+        border-radius: 10px;
+        width: 90%;
+        padding: 10px;
         font-size: 1rem;
-        border-radius: 12px;
-        display: inline-block;
-  }
-    #Inicio .container_2 img {
-        width: 80%;
-        margin: 5% 0;
     }
+
+    #Inicio .container_1 a span {
+        color: white;
+    }
+
+    #Inicio .container_2 img {
+        width: 100%;
+    }
+
     #Inicio .container_2 {
-        margin-left: 5%;
+        margin: 10% 0;
     }
     .icono {
     width: 20%;
