@@ -346,7 +346,7 @@ h1{
   }
   #part_1 .container_1,
   #part_1 .container_2 {
-    margin: 5% 0%
+    margin: 5% 0%;
     float: none;
     padding: 0% 30%;
     box-sizing: border-box;
@@ -390,4 +390,43 @@ h1{
   #part_1 hr {
   display: none;
   }
+   .factura {
+        margin: 5%;
+        padding: 5%;
+        width: 90%;
+    }
+    .factura h1, .factura h2 {
+        text-align: center;
+        margin: 2% auto;
+    }
+    #selecciones {
+        margin: 5% 0;
+    }
+    .codigo_qr {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20px;
+        float: none; 
+    }
+
+    .codigo_qr img {
+        width: 150px;
+        height: auto;
+        transform: none;
+        margin: 50% 0% -40% -75% ;
+    }
+
+    .codigo_qr p {
+        margin-top: 10px;
+        font-size: 16px;
+        text-align: center;
+    }
+    .factura .logo {
+        width: 50%;
+        display: block;
+        margin: 3% auto;
+        transform: none;
+    }
 }
